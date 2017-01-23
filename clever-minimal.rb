@@ -46,6 +46,12 @@ file 'Procfile', <<-YAML
 web: bundle exec puma -C config/puma.rb
 YAML
 
+# Spring conf file
+########################################
+inject_into_file 'config/spring.rb', before: ').each { |path| Spring.watch(path) }' do
+  "  config/application.yml\n"
+end
+
 # Puma conf file
 ########################################
 if Rails.version < "5"
