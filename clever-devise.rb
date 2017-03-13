@@ -270,6 +270,7 @@ RUBY
 #   FB_ID: "23**********38"
 #   FB_SECRET: "7f**********3b"
 production:
+  RAILS_ENV: "production"
   SECRET_KEY_BASE: "#{SecureRandom.hex(64)}"
 EOF
     file 'application.yml', figaro_yml, force: true
