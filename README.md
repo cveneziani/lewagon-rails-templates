@@ -46,7 +46,7 @@ rails new \
 ```bash
 rails new \
   -T --database postgresql \
-  -m https://raw.githubusercontent.com/cveneziani/lewagon-rails-templates/clever-cloud/clever-devise.rb
+  -m https://raw.githubusercontent.com/cveneziani/lewagon-rails-templates/clever-cloud/clever-devise.rb \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
 ```
 
